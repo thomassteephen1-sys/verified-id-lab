@@ -1,0 +1,48 @@
+{
+  "id": "did:web:ambitious-plant-0201b9f03.7.azurestaticapps.net",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:ambitious-plant-0201b9f03.7.azurestaticapps.net"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://ambitious-plant-0201b9f03.7.azurestaticapps.net/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/dd99b086-8501-415f-9c82-07ce15194405"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#f8e61d65447a481a8eac47a15ceca632vcSigningKey-48eec",
+      "controller": "did:web:ambitious-plant-0201b9f03.7.azurestaticapps.net",
+      "type": "JsonWebKey2020",
+      "publicKeyJwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "6ubRULCMPBc05PmP9B3WP2xLa8V15VLzHuNAHGhamgA",
+        "y": "7p55MNtQ9M_i3UZ_4MpRQ14W1hc-eHgSFmiMxQADk_U"
+      }
+    }
+  ],
+  "authentication": [
+    "#f8e61d65447a481a8eac47a15ceca632vcSigningKey-48eec"
+  ],
+  "assertionMethod": [
+    "#f8e61d65447a481a8eac47a15ceca632vcSigningKey-48eec"
+  ]
+}
