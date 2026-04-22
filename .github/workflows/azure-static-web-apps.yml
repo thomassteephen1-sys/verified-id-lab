@@ -19,5 +19,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/" 
-          output_location: "." # This tells it to just take the files as they are
-          skip_app_build: true # This skips the error if there's no code to build
+          output_location: "" # Leave this empty to just upload the root
+          skip_app_build: true # This is the magic line that prevents errors
